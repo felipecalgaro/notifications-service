@@ -1,10 +1,6 @@
-import { Content } from '@app/entities/content';
-import { Notification } from '@app/entities/notification';
 import { makeNotification } from '@test/factories/notification-factory';
 import { InMemoryNotificationsRepository } from '@test/repositories/in-memory-notifications-repository';
-import { CancelNotification } from './cancel-notification';
 import { CountRecipientNotifications } from './count-recipient-notifications';
-import { NotificationNotFound } from './errors/notification-not-found';
 
 describe('Count recipient notifications', () => {
   it('should be able to count recipient notifications', async () => {
